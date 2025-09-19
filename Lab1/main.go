@@ -71,7 +71,7 @@ func (automaton *Automaton) ProcessChar(c rune) {
         if c == 'b' {
             automaton.State = S2
         } else if c == 'a' {
-
+           automaton.State = S2
 		} else {
             automaton.State = ERROR
         }
@@ -83,7 +83,7 @@ func (automaton *Automaton) ProcessChar(c rune) {
         }
     case S3:
         if c == 'd' {
-
+           automaton.State = S3 
 		} else {
             automaton.State = ERROR
         }
